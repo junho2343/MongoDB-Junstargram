@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-white" style="margin-bottom:50px;border:1px solid #e6e6e6">
+		  <div class="container">
+		  	<a class="navbar-brand" href="/">Junstagram</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item <%=page == './view/product/index.ejs' ? 'active' : '';%>">
+		        <a class="nav-link" href="/">Home</a>
+		      </li>
+		      <li class="nav-item <%=page == './view/admin/product.ejs' ? 'active' : '';%>">
+		        <a class="nav-link" href="/admin/product">Write</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Disabled</a>
+		      </li>
+		    </ul>
+		    <form action="/" method="post" class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" name="search" type="search" onkeydown="Init.search(value)" placeholder="Search" id="search" aria-label="Search" autofocus <%=page == './view/admin/product.ejs' ? 'Disabled' : '';%>>
+		      <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+		      <div class="hashtag_box" <%=page == './view/admin/product.ejs' ? 'Disabled' : '';%>>
+		 <!--      	<div class="box">
+		      		<div>
+						<span class="hashtag">#</span>
+		      			<span class="top">#감성</span>
+		      			<span class="bottom">게시물 1,152</span>
+		      		</div>
+		      	</div> -->
+		      </div>
+		    </form>
+		  </div>
+		  </div>
+		</nav>

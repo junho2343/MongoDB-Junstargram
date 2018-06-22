@@ -1,0 +1,19 @@
+
+<%- include('./temp/header.ejs') -%>
+<%- include(page) -%>
+<script> 
+
+	var temp = "<%= tag %>".split(",");
+
+	var tag_data = [];
+	temp.forEach(function(v,i){
+		// tag_data[v] = {name: v,cnt: (tag_data[v].cnt || 0) + 1}
+		
+		tag_data[v] = (tag_data[v] || 0) + 1;
+	})
+	console.log(tag_data);
+
+	
+
+ </script>
+<%- include('./temp/footer.ejs') -%>

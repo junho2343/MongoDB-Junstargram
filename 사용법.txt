@@ -1,0 +1,7 @@
+
+node js 설치
+C에  C:\data\db 폴더 생성
+https://www.mongodb.com/download-center?jmp=nav#community 이 페이지에서 mongodb설치
+cmd창에서 C:\Program Files\MongoDB\Server\3.6\bin 에서 mongod 실행
+cmd창에서 junstargram폴더에서 node app.js 실행
+localhost:3000으로 접속
