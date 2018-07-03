@@ -1,4 +1,4 @@
-# junstargram
+# Junstargram
 
 > [model](https://github.com/junho2343/junstargram/model)
   > Datavase schema
